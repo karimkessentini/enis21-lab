@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {MemberService} from "../../../services/member.service";
+import {MemberService} from "../../../../services/member.service";
 import {ActivatedRoute, Router} from "@angular/router";
-import {Member} from "../../../models/memeber.model";
+import {Member} from "../../../../models/memeber.model";
 
 @Component({
   selector: 'app-member-form',
@@ -17,8 +17,8 @@ export class MemberFormComponent implements OnInit {
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private memberService :MemberService,
-    ) {
+    private memberService: MemberService,
+  ) {
   }
 
   ngOnInit(): void {

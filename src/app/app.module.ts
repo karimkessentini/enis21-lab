@@ -3,9 +3,9 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {DashboardComponent} from './dashboard/dashboard.component';
-import {MemberListComponent} from './member/member-list/member-list.component';
-import {MemberFormComponent} from './member/member-form/member-form.component';
+import {DashboardComponent} from './main/dashboard/dashboard.component';
+import {MemberListComponent} from './main/member/member-list/member-list.component';
+import {MemberFormComponent} from './main/member/member-form/member-form.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SharedModule} from "../@root/shared.module";
 import {LayoutComponent} from './layout/layout.component';

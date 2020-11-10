@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {DashboardComponent} from "./dashboard/dashboard.component";
-import {MemberListComponent} from "./member/member-list/member-list.component";
-import {MemberFormComponent} from "./member/member-form/member-form.component";
+import {DashboardComponent} from "./main/dashboard/dashboard.component";
+import {MemberListComponent} from "./main/member/member-list/member-list.component";
+import {MemberFormComponent} from "./main/member/member-form/member-form.component";
 
 const routes: Routes = [
   {

@@ -7,6 +7,7 @@
     "start-dev": "ng serve --open --port 8002",
     "start-dev-mobile": "ng serve --open --port 8002 --host 0.0.0.0",
     "build": "ng build",
+    "build-prod": "node --max_old_space_size=6144 ./node_modules/@angular/cli/bin/ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

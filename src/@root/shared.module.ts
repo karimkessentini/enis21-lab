@@ -3,6 +3,7 @@ import {MaterialModule} from "./material/material.module";
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {ConfirmDialogModule} from "./components/confirm-dialog/confirm-dialog.module";
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     FormsModule,
     ReactiveFormsModule,
 
+    ConfirmDialogModule,
   ],
   exports: [
     MaterialModule,
@@ -20,6 +22,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+
+    ConfirmDialogModule,
   ],
 })
 export class SharedModule {
