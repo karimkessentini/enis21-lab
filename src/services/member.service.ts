@@ -16,8 +16,8 @@ export class MemberService {
   }
 
   getAllMembers(): Promise<Member[]> {
-    // return this.httpClient.get<Member[]>('linkToRestApi').toPromise();
-    return new Promise(resolve => resolve(this.placeholderMembers));
+    return this.httpClient.get<Member[]>('https://www.googleapis.com/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyDkG3gUQA2ERloi6JoM5dbrIh5p7jNG_8c').toPromise();
+    // return new Promise(resolve => resolve(this.placeholderMembers));
   }
 
   getMemberById(id: string): Promise<Member> {

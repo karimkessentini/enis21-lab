@@ -9,6 +9,10 @@ import {MemberFormComponent} from './main/member/member-form/member-form.compone
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SharedModule} from "../@root/shared.module";
 import {LayoutComponent} from './layout/layout.component';
+import {FirebaseModule} from "../@root/firebase/firebase.module";
+import {LoginComponent} from './auth/login/login.component';
+import {HTTP_INTERCEPTORS} from "@angular/common/http";
+import {TokenInterceptor} from 'src/services/token.interceptor';
 
 @NgModule({
   declarations: [
@@ -17,14 +21,22 @@ import {LayoutComponent} from './layout/layout.component';
     DashboardComponent,
     MemberListComponent,
     MemberFormComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
+    FirebaseModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
