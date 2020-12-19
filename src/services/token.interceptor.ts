@@ -34,7 +34,7 @@ export class TokenInterceptor implements HttpInterceptor {
       });
       return next.handle(request);
     }), catchError((error: HttpErrorResponse) => {
-      if (error.status === 401 || true) {
+      if (error.status === 401) {
         const message = "Your token is expired!";
         this._snackBar.open(message, null, {
           duration: 10000,
