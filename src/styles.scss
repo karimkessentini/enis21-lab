@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 // Import Fuse core library
 @import "@root/scss/core";
-
-app-root { width: 100%; }
+@import '~bootstrap/dist/css/bootstrap.min.css';
+app-root { width: 100%;}

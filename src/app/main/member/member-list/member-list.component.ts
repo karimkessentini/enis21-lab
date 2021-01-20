@@ -5,6 +5,7 @@ import {MatDialog} from "@angular/material/dialog";
 import {ConfirmDialogComponent} from "../../../../@root/components/confirm-dialog/confirm-dialog.component";
 import {Subject} from "rxjs";
 import {takeUntil} from "rxjs/operators";
+import { AuthentificationService } from 'src/services/authentification.service';
 
 @Component({
   selector: 'app-member-list',
@@ -21,6 +22,7 @@ export class MemberListComponent implements OnInit, OnDestroy {
   constructor(
     private memberService :MemberService,
     private dialog: MatDialog,
+    public authentificationService: AuthentificationService
   ) { }
 
 

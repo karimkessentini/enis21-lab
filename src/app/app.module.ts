@@ -9,6 +9,14 @@ import {MemberFormComponent} from './main/member/member-form/member-form.compone
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SharedModule} from "../@root/shared.module";
 import {LayoutComponent} from './layout/layout.component';
+import { ToolComponent } from './main/tool/tool.component';
+import { ArticleComponent } from './main/article/article.component';
+import { EventComponent } from './main/event/event.component';
+import { LoginComponent } from './main/login/login.component';
+import { MemberProfileComponent } from './main/member/member-profile/member-profile.component';
+import { ToolFormComponent } from './main/tool/tool-form/tool-form.component';
+import { ArticleFormComponent } from './main/article/article-form/article-form.component';
+import { EventFormComponent } from './main/event/event-form/event-form.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +25,14 @@ import {LayoutComponent} from './layout/layout.component';
     DashboardComponent,
     MemberListComponent,
     MemberFormComponent,
+    ToolComponent,
+    ArticleComponent,
+    EventComponent,
+    LoginComponent,
+    MemberProfileComponent,
+    ToolFormComponent,
+    ArticleFormComponent,
+    EventFormComponent,
   ],
   imports: [
     BrowserModule,

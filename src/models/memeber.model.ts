@@ -4,5 +4,13 @@ export interface Member {
   name: string,
   createdDate: string,
   cv: string,
-  type: string
+  type: string,
+  email: string,
+  password: string,
+  role?: string
+}
+
+export enum Role {
+  ADMIN = 'admin',
+  MEMBER = 'member'
 }
